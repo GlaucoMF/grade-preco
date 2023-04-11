@@ -1,0 +1,126 @@
+body{
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+}
+
+main{
+    background-color: var(--neutra-azul-acinzentado);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+}
+
+.container .titulo{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--neutra-cinza-claro);
+    height: 100%;
+    padding: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.container .titulo h1{
+    color: var(--primaria-ciano);
+    font-weight: 700;
+}
+
+.container .titulo h2{
+    color: var(--primaria-amarelo);
+    font-size: 18px;
+}
+
+.container .titulo p{
+    color: var(--neutra-azul-acinzentado);
+}
+
+.informacoes{
+    display: flex;
+}
+
+.informacoes .valores{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    background-color: var(--primaria-ciano);
+    height: 300px;
+    padding: 30px;
+    border-bottom-left-radius: 10px;
+}
+
+.informacoes .valores h3{
+    color: var(--neutra-cinza-claro);
+    margin: 20px 0;
+}
+
+.informacoes .valores .preco{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 18px;
+}
+
+.informacoes .valores span{
+    color: var(--neutra-cinza-claro);
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.informacoes .valores p{
+    color: var(--neutra-cinza-claro);
+}
+
+.informacoes .valores button{
+    background-color: var(--primaria-amarelo);
+    color: var(--neutra-cinza-claro);
+    font-size: 18px;
+    padding: 10px;
+    margin-top: 25px;
+    border-radius: 8px;
+    border: none;
+}
+
+.info{
+    width: 400px;
+    background-color: var(--primaria-ciano);
+    opacity: 0.5;
+    padding: 30px;
+    border-bottom-right-radius: 10px;
+}
+
+.info h3{
+    color: white;
+    margin: 20px 0;
+}
+
+.info p{
+    color: var(--neutra-cinza-claro);
+    text-align: justify;
+    line-height: 25px;
+}
+
+@media (max-width: 768px){
+    main{
+        height: 900px;
+    }
+
+    .container{
+        max-width: 400px;
+    }
+
+    .container .titulo{
+        height: 100%;
+    }
+
+    .informacoes{
+        display: block;
+    }
+}
